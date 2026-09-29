@@ -1,0 +1,31 @@
+{
+  "data_classification": "SYNTHETIC_HACKATHON_DATA",
+  "not_for_production": true,
+  "schema_version": "1",
+  "records": [
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.0.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": null,
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "MOCK-TERMS-001",
+      "program_id": "MOCK-PRG-HOM",
+      "currency": "USD",
+      "standard_apr_bps": 2345,
+      "apr_type": "VARIABLE",
+      "apr_source": "MOCK-TERMS-001",
+      "account_scope": "MOCK_EXISTING_ACCOUNT",
+      "checksum": "e87c63d6ebe8d3ce5791d2d21036ee8e6dac498908dcaee2af2fad8dc9ad57ea"
+    }
+  ]
+}

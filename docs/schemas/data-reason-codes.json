@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "data_classification": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "enum": [
+        "SYNTHETIC_HACKATHON_DATA"
+      ]
+    },
+    "not_for_production": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "enum": [
+        "1"
+      ]
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "recovery": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          }
+        },
+        "required": [
+          "id",
+          "version",
+          "message",
+          "recovery"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 100
+    }
+  },
+  "required": [
+    "data_classification",
+    "not_for_production",
+    "schema_version",
+    "records"
+  ],
+  "additionalProperties": false
+}

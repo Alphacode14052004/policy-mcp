@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.build/
+.env
+runtime/*
+!runtime/.gitkeep
+vendor/*
+!vendor/README.md
+eval/results/local-*
+.pytest_cache/
+.history/
+.chart-data-*/

@@ -1,0 +1,39 @@
+{
+  "scope": "Isolated synthetic policy/contract audit of current fixtures; no live journey or merchant checkout modified. Requested 2%/29.99% scenario is not configured.",
+  "cart_total_cents": 120000,
+  "offers": [
+    {
+      "offer_id": "CASHBACK-REV",
+      "eligible": true,
+      "reason_codes": []
+    },
+    {
+      "offer_id": "EPP-12-0APR",
+      "eligible": true,
+      "reason_codes": []
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": "two offer IDs in scalar offer_id",
+      "reason_code": "SCHEMA_VALIDATION_FAILED",
+      "journey_state": "NONE",
+      "journey_version": 0
+    },
+    {
+      "attempt": "unmodeled merchant applied offers",
+      "reason_code": "SCHEMA_VALIDATION_FAILED",
+      "journey_state": "NONE",
+      "journey_version": 0
+    }
+  ],
+  "final_state": "OFFERS_EVALUATED",
+  "receipt_recorded": false,
+  "authorization_recorded": false,
+  "limitations": [
+    "Current reward is 1%, capped at $20, vesting after 30 days; standard APR is 23.45% variable.",
+    "Strict single-offer schema rejects multi-offer inputs with SCHEMA_VALIDATION_FAILED, not a dedicated stacking-conflict result.",
+    "Unreported merchant-side rewards are not visible to these tools. A complete proposed-benefits input and explicit conflict check are needed.",
+    "Current previews are individual offer disclosures, not a separate approved comparative opt-in template."
+  ]
+}

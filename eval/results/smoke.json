@@ -1,0 +1,697 @@
+{
+  "label": "AUTOMATED SYNTHETIC FIXTURE; NO HUMAN CONSENT OR LIVE LLM REHEARSAL",
+  "steps": [
+    {
+      "tool": "start_offer_journey",
+      "response": {
+        "status": "COMPLETED",
+        "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+        "journey_state": "OFFERS_EVALUATED",
+        "journey_version": 1,
+        "reason_code": "OK",
+        "message": "Request completed using synthetic data.",
+        "result": {
+          "cart_total_cents": 80000,
+          "offers": [
+            {
+              "offer_id": "CASHBACK-REV",
+              "name": "Mock CASHBACK-REV",
+              "plan_type": "CASHBACK_REVOLVING",
+              "eligible": false,
+              "reason_codes": [
+                "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+              ],
+              "minimum_eligible_cents": 100000,
+              "eligible_subtotal_cents": 70000,
+              "excluded_cents": 10000,
+              "eligible_lines": [
+                {
+                  "line_id": "line-appliance",
+                  "amount_cents": 70000
+                }
+              ],
+              "excluded_lines": [
+                {
+                  "line_id": "line-gift",
+                  "amount_cents": 10000,
+                  "reason_code": "ITEM_TYPE_EXCLUDED"
+                }
+              ],
+              "allocation": null
+            },
+            {
+              "offer_id": "CUSTOM-4",
+              "name": "Mock CUSTOM-4",
+              "plan_type": "CUSTOM_AMORTIZATION",
+              "eligible": false,
+              "reason_codes": [
+                "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+              ],
+              "minimum_eligible_cents": 100000,
+              "eligible_subtotal_cents": 70000,
+              "excluded_cents": 10000,
+              "eligible_lines": [
+                {
+                  "line_id": "line-appliance",
+                  "amount_cents": 70000
+                }
+              ],
+              "excluded_lines": [
+                {
+                  "line_id": "line-gift",
+                  "amount_cents": 10000,
+                  "reason_code": "ITEM_TYPE_EXCLUDED"
+                }
+              ],
+              "allocation": null
+            },
+            {
+              "offer_id": "DI-6M",
+              "name": "Mock DI-6M",
+              "plan_type": "DEFERRED_INTEREST",
+              "eligible": true,
+              "reason_codes": [],
+              "minimum_eligible_cents": 20000,
+              "eligible_subtotal_cents": 70000,
+              "excluded_cents": 10000,
+              "eligible_lines": [
+                {
+                  "line_id": "line-appliance",
+                  "amount_cents": 70000
+                }
+              ],
+              "excluded_lines": [
+                {
+                  "line_id": "line-gift",
+                  "amount_cents": 10000,
+                  "reason_code": "ITEM_TYPE_EXCLUDED"
+                }
+              ],
+              "allocation": {
+                "financed_cents": 70000,
+                "excluded_cents": 10000,
+                "excluded_disposition": "SEPARATE_TENDER_OR_STANDARD_REVOLVING",
+                "confirmation_required": true
+              }
+            },
+            {
+              "offer_id": "EPP-12-0APR",
+              "name": "Mock EPP-12-0APR",
+              "plan_type": "EQUAL_PAY_NO_INTEREST",
+              "eligible": false,
+              "reason_codes": [
+                "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+              ],
+              "minimum_eligible_cents": 75000,
+              "eligible_subtotal_cents": 70000,
+              "excluded_cents": 10000,
+              "eligible_lines": [
+                {
+                  "line_id": "line-appliance",
+                  "amount_cents": 70000
+                }
+              ],
+              "excluded_lines": [
+                {
+                  "line_id": "line-gift",
+                  "amount_cents": 10000,
+                  "reason_code": "ITEM_TYPE_EXCLUDED"
+                }
+              ],
+              "allocation": null
+            },
+            {
+              "offer_id": "REDUCED-12",
+              "name": "Mock REDUCED-12",
+              "plan_type": "REDUCED_APR_FIXED_TERM",
+              "eligible": false,
+              "reason_codes": [
+                "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+              ],
+              "minimum_eligible_cents": 90000,
+              "eligible_subtotal_cents": 70000,
+              "excluded_cents": 10000,
+              "eligible_lines": [
+                {
+                  "line_id": "line-appliance",
+                  "amount_cents": 70000
+                }
+              ],
+              "excluded_lines": [
+                {
+                  "line_id": "line-gift",
+                  "amount_cents": 10000,
+                  "reason_code": "ITEM_TYPE_EXCLUDED"
+                }
+              ],
+              "allocation": null
+            },
+            {
+              "offer_id": "STANDARD-REV",
+              "name": "Mock STANDARD-REV",
+              "plan_type": "STANDARD_REVOLVING",
+              "eligible": true,
+              "reason_codes": [],
+              "minimum_eligible_cents": 1,
+              "eligible_subtotal_cents": 70000,
+              "excluded_cents": 10000,
+              "eligible_lines": [
+                {
+                  "line_id": "line-appliance",
+                  "amount_cents": 70000
+                }
+              ],
+              "excluded_lines": [
+                {
+                  "line_id": "line-gift",
+                  "amount_cents": 10000,
+                  "reason_code": "ITEM_TYPE_EXCLUDED"
+                }
+              ],
+              "allocation": {
+                "financed_cents": 70000,
+                "excluded_cents": 10000,
+                "excluded_disposition": "SEPARATE_TENDER_OR_STANDARD_REVOLVING",
+                "confirmation_required": true
+              }
+            }
+          ],
+          "recommendation": {
+            "offer_id": "DI-6M",
+            "scores": [
+              {
+                "offer_id": "DI-6M",
+                "penalty": 103,
+                "reason_codes": [
+                  "DEFERRED_INTEREST_DEADLINE_RISK",
+                  "PAYMENT_TARGET_DISTANCE"
+                ],
+                "estimated_first_payment_cents": 11700
+              },
+              {
+                "offer_id": "STANDARD-REV",
+                "penalty": 1000,
+                "reason_codes": [
+                  "REVOLVING_PAYMENT_NOT_ESTIMATED"
+                ],
+                "estimated_first_payment_cents": null
+              }
+            ],
+            "scoring_inputs": {
+              "avoid_surprise_interest": true,
+              "target_monthly_cents": 12000
+            },
+            "commercial_steering_inputs": [],
+            "explanation": "Lowest transparent penalty among eligible options. Deferred interest has surprise-interest risk; a recommendation is not acceptance. Confirm that tradeoff with the consumer."
+          },
+          "policy": {
+            "policy_id": "MOCK_DEFAULT",
+            "policy_version": "1.0.0",
+            "legal_approval_id": "MOCK-APPROVAL-001",
+            "effective_terms": {
+              "standard_apr_bps": 2345,
+              "apr_type": "VARIABLE",
+              "apr_source": "MOCK-TERMS-001"
+            },
+            "explanation_code": "MOCK_POLICY_APPLIED",
+            "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+            "label": "Mock policy applied"
+          },
+          "standard_fallback": {
+            "offer_id": "STANDARD-REV",
+            "name": "Mock STANDARD-REV",
+            "plan_type": "STANDARD_REVOLVING",
+            "eligible": true,
+            "reason_codes": [],
+            "minimum_eligible_cents": 1,
+            "eligible_subtotal_cents": 70000,
+            "excluded_cents": 10000,
+            "eligible_lines": [
+              {
+                "line_id": "line-appliance",
+                "amount_cents": 70000
+              }
+            ],
+            "excluded_lines": [
+              {
+                "line_id": "line-gift",
+                "amount_cents": 10000,
+                "reason_code": "ITEM_TYPE_EXCLUDED"
+              }
+            ],
+            "allocation": {
+              "financed_cents": 70000,
+              "excluded_cents": 10000,
+              "excluded_disposition": "SEPARATE_TENDER_OR_STANDARD_REVOLVING",
+              "confirmation_required": true
+            }
+          },
+          "allocation_note": "The DI-6M $200 minimum is a threshold, not the financed amount. Excluded balances require consumer confirmation."
+        },
+        "next_action": {
+          "tool": "prepare_offer_disclosure",
+          "required_inputs": [
+            "merchant_id",
+            "agent_id",
+            "request_id",
+            "correlation_id",
+            "journey_id",
+            "expected_version",
+            "idempotency_key",
+            "offer_id"
+          ],
+          "instruction": "Ask the consumer to select an eligible offer and explicitly confirm any excluded balance disposition."
+        },
+        "request_id": "demo-request-001",
+        "correlation_id": "demo-correlation-001",
+        "warning": "SYNTHETIC HACKATHON DATA — NOT APPROVED LEGAL COPY; NOT FOR PRODUCTION.",
+        "code": "offerproof.ok",
+        "trackingId": "demo-request-001",
+        "transient": false
+      }
+    },
+    {
+      "tool": "prepare_offer_disclosure",
+      "response": {
+        "status": "COMPLETED",
+        "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+        "journey_state": "DISCLOSURE_ISSUED",
+        "journey_version": 2,
+        "reason_code": "OK",
+        "message": "Request completed using synthetic data.",
+        "result": {
+          "canonical_text": "MOCK DISCLOSURE — NOT APPROVED LEGAL COPY.\nNo interest if paid in full within 6 months. If the promotional balance is not paid in full by 2027-03-29, interest will be charged from the purchase date at the standard purchase APR applicable to the account, currently 23.45% variable. Minimum monthly payments are required and may not pay off the promotional balance by the deadline. Suggested payoff amount $117.00; this is not the account minimum payment.\nFinanced eligible amount $700.00. Excluded balance $100.00: SEPARATE_TENDER. Mock policy applied: MOCK_DEFAULT.",
+          "canonical_text_must_not_be_modified": true,
+          "protected_segments": [
+            "headline",
+            "warning",
+            "facts",
+            "allocation",
+            "terms"
+          ],
+          "facts": {
+            "eligible_amount_cents": 70000,
+            "excluded_amount_cents": 10000,
+            "plan_name": "Mock DI-6M",
+            "plan_type": "DEFERRED_INTEREST",
+            "term_months": 6,
+            "standard_apr_bps": 2345,
+            "promo_apr_bps": null,
+            "apr_type": "VARIABLE",
+            "apr_source": "MOCK-TERMS-001",
+            "payoff_date": "2027-03-29",
+            "payments_cents": [
+              11700,
+              11700,
+              11700,
+              11700,
+              11700,
+              11500
+            ],
+            "total_payments_cents": 70000,
+            "finance_cost_cents": 0,
+            "kind": "ILLUSTRATIVE_PAYOFF_NOT_MINIMUM",
+            "deferred_interest_risk": true,
+            "reward": null
+          },
+          "versions": {
+            "offer_id": "DI-6M",
+            "offer_version": "1.0.0",
+            "terms_id": "MOCK-TERMS-001",
+            "terms_version": "1.0.0",
+            "policy_id": "MOCK_DEFAULT",
+            "policy_version": "1.0.0",
+            "legal_approval_id": "MOCK-APPROVAL-001",
+            "disclosure_legal_approval_id": "MOCK-APPROVAL-001",
+            "disclosure_id": "MOCK-DISC-DI-6M",
+            "disclosure_version": "1.0.0",
+            "template_id": "MOCK-TPL-DI-6M",
+            "template_version": "1.0.0",
+            "presentation_policy_id": "MOCK-PRESENTATION-001",
+            "presentation_policy_version": "1.0.0"
+          },
+          "disclosure_digest": "10dc017d8d98090138714dc0e1d3a40a18ff9f6e9196b230ac6a1cd1cf429ad3",
+          "cart_digest": "b870f13da6fcda0ea483dc2a3d607ad7e2c3180e4b0364684ac5ed7dc9cd7204",
+          "allocation": {
+            "financed_cents": 70000,
+            "excluded_cents": 10000,
+            "excluded_disposition": "SEPARATE_TENDER",
+            "confirmation_required": false,
+            "confirmed_by": "CONSUMER"
+          },
+          "eligible_lines": [
+            {
+              "line_id": "line-appliance",
+              "amount_cents": 70000
+            }
+          ],
+          "excluded_lines": [
+            {
+              "line_id": "line-gift",
+              "amount_cents": 10000,
+              "reason_code": "ITEM_TYPE_EXCLUDED"
+            }
+          ],
+          "interpolation_inputs": {
+            "apr_type": "variable",
+            "eligible_amount": "$700.00",
+            "excluded_amount": "$100.00",
+            "excluded_disposition": "SEPARATE_TENDER",
+            "monthly_payment": "$117.00",
+            "payoff_date": "2027-03-29",
+            "policy_id": "MOCK_DEFAULT",
+            "standard_apr": "23.45",
+            "term_months": 6
+          },
+          "record_digests": {
+            "offer": "f50692cbfba6e93d4c0bbb824c7e2aafe96441d82e39f615d46da6d21dcb9654",
+            "terms": "6805e760ee73ee7876cfb7d5dd3a15f5a3b63387ff4b8113f5edcba1b48eeffa",
+            "policy": "42a62cfbdf78640a4ac2cb534dd751e6a4860cadd0110270f0fef8b8d4bb8794",
+            "profile": "3c08692d1d4a175a16111c0836ed0b38939489a048e382ffb6e730647d98fe92",
+            "disclosure": "b2a28e28bb3b3f5587eb084e1d4214dc8d56e76f33a03e47f6ba71f52faf17b4",
+            "renderer": "527ecfa96c21a297b1d7b2fb29445695d20b66c7cfae3b99ef2a7046533ddd5f",
+            "merchant": "01b445b6f5d49b62892392281743ca68e5ae0d08f5232856b06ec8e4a8bb5fa2",
+            "products": "84d9c319951bf96255f7f5060a4a65c56ac16b20859fcc03daee800b8ce7fd16"
+          },
+          "presentation_requirements": {
+            "evidence_label": "MOCK_RENDERER_ATTESTATION",
+            "renderer_id": "MOCK-RENDERER-CHAT",
+            "renderer_version": "1.0.0",
+            "locale": "en-US",
+            "channel": "ONLINE_AGENT",
+            "required_sections": [
+              "headline",
+              "warning",
+              "facts",
+              "allocation",
+              "terms"
+            ],
+            "placement_order": [
+              "headline",
+              "warning",
+              "facts",
+              "allocation",
+              "terms"
+            ],
+            "prominence_checks": [
+              "READABLE",
+              "EQUAL_PROMINENCE",
+              "WARNING_VISIBLE"
+            ],
+            "a11y_checks": [
+              "KEYBOARD",
+              "SCREEN_READER",
+              "NO_COLOR_ONLY"
+            ],
+            "minimum_visible_ms": 1000,
+            "acknowledgment_required": true,
+            "consent_preselected": false
+          },
+          "valid_until": "2029-12-01T00:00:00.000000Z",
+          "policy_label": "Mock policy applied",
+          "warning": "SYNTHETIC HACKATHON DATA — NOT APPROVED LEGAL COPY; NOT FOR PRODUCTION.",
+          "snapshot_id": "snapshot-deb9c52e7fad4157b5694aff1a3b4d9e"
+        },
+        "next_action": {
+          "tool": "record_disclosure_outcome",
+          "required_inputs": [
+            "merchant_id",
+            "agent_id",
+            "request_id",
+            "correlation_id",
+            "journey_id",
+            "expected_version",
+            "idempotency_key",
+            "renderer_id",
+            "cart_digest",
+            "disclosure_digest",
+            "outcome",
+            "evidence"
+          ],
+          "instruction": "Display canonical_text exactly. Submit PRESENTED only with structured mock renderer attestation; delivery is not presentation."
+        },
+        "request_id": "request-37fa983fb61b48eda550e019b4a141d6prepare",
+        "correlation_id": "demo-correlation-001",
+        "warning": "SYNTHETIC HACKATHON DATA — NOT APPROVED LEGAL COPY; NOT FOR PRODUCTION.",
+        "code": "offerproof.ok",
+        "trackingId": "request-37fa983fb61b48eda550e019b4a141d6prepare",
+        "transient": false
+      }
+    },
+    {
+      "tool": "record_disclosure_outcome",
+      "response": {
+        "status": "COMPLETED",
+        "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+        "journey_state": "DISCLOSURE_PRESENTED",
+        "journey_version": 3,
+        "reason_code": "OK",
+        "message": "Request completed using synthetic data.",
+        "result": {
+          "evidence_label": "MOCK_RENDERER_ATTESTATION",
+          "receipt": null
+        },
+        "next_action": {
+          "tool": "record_disclosure_outcome",
+          "required_inputs": [
+            "merchant_id",
+            "agent_id",
+            "request_id",
+            "correlation_id",
+            "journey_id",
+            "expected_version",
+            "idempotency_key",
+            "renderer_id",
+            "cart_digest",
+            "disclosure_digest",
+            "outcome",
+            "evidence"
+          ],
+          "instruction": "Ask the consumer for affirmative acknowledgment. Submit ACKNOWLEDGED with the same presentation evidence and a consumer event."
+        },
+        "request_id": "request-37fa983fb61b48eda550e019b4a141d6present",
+        "correlation_id": "demo-correlation-001",
+        "warning": "SYNTHETIC HACKATHON DATA — NOT APPROVED LEGAL COPY; NOT FOR PRODUCTION.",
+        "code": "offerproof.ok",
+        "trackingId": "request-37fa983fb61b48eda550e019b4a141d6present",
+        "transient": false
+      }
+    },
+    {
+      "tool": "record_disclosure_outcome",
+      "response": {
+        "status": "COMPLETED",
+        "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+        "journey_state": "ACKNOWLEDGED",
+        "journey_version": 4,
+        "reason_code": "OK",
+        "message": "Request completed using synthetic data.",
+        "result": {
+          "receipt": {
+            "payload": {
+              "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+              "merchant_id": "MOCK-MER-0001",
+              "agent_id": "MOCK-AGT-001",
+              "offer_id": "DI-6M",
+              "offer_version": "1.0.0",
+              "terms_id": "MOCK-TERMS-001",
+              "terms_version": "1.0.0",
+              "policy_id": "MOCK_DEFAULT",
+              "policy_version": "1.0.0",
+              "disclosure_id": "MOCK-DISC-DI-6M",
+              "disclosure_version": "1.0.0",
+              "presentation_policy_id": "MOCK-PRESENTATION-001",
+              "presentation_policy_version": "1.0.0",
+              "cart_digest": "b870f13da6fcda0ea483dc2a3d607ad7e2c3180e4b0364684ac5ed7dc9cd7204",
+              "disclosure_digest": "10dc017d8d98090138714dc0e1d3a40a18ff9f6e9196b230ac6a1cd1cf429ad3",
+              "allocation_digest": "d2e128fa54975f4d95c5f04d3974c4116a4c65ff5100f9474b3e4ee52baa8576",
+              "context_digest": "e92d69585b03dfef719f1452ce77aa5c2972694209b1b3943d0adaea4494b8f2",
+              "versions_digest": "0bd1fef2cc7af60c0e7895353d523bfdde0f8a37f7e22dae9c8e26c1256b95b2",
+              "presented_at": "2026-09-29T10:03:25.870659Z",
+              "acknowledged_at": "2026-09-29T10:03:25.910078Z",
+              "locale": "en-US",
+              "channel": "ONLINE_AGENT",
+              "renderer_id": "MOCK-RENDERER-CHAT",
+              "renderer_version": "1.0.0",
+              "receipt_id": "receipt-43c3c437f9ff4022836e7771dbb786f1",
+              "expires_at": "2026-09-29T10:18:25.943211Z"
+            },
+            "signature": "1cf79a9dcdf0c55a209b768d73f3a868c22828a315a4a87c9fa16a7a72673ea5"
+          },
+          "evidence_label": "MOCK_RENDERER_ATTESTATION"
+        },
+        "next_action": {
+          "tool": "authorize_promotional_checkout",
+          "required_inputs": [
+            "merchant_id",
+            "agent_id",
+            "request_id",
+            "correlation_id",
+            "journey_id",
+            "expected_version",
+            "idempotency_key",
+            "cart",
+            "jurisdiction",
+            "offer_id"
+          ],
+          "instruction": "Submit unchanged cart/context and the signed acknowledgment receipt. This is a mock authorization, not payment."
+        },
+        "request_id": "request-37fa983fb61b48eda550e019b4a141d6ack",
+        "correlation_id": "demo-correlation-001",
+        "warning": "SYNTHETIC HACKATHON DATA — NOT APPROVED LEGAL COPY; NOT FOR PRODUCTION.",
+        "code": "offerproof.ok",
+        "trackingId": "request-37fa983fb61b48eda550e019b4a141d6ack",
+        "transient": false
+      }
+    },
+    {
+      "tool": "authorize_promotional_checkout",
+      "response": {
+        "status": "COMPLETED",
+        "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+        "journey_state": "AUTHORIZED",
+        "journey_version": 5,
+        "reason_code": "OK",
+        "message": "Request completed using synthetic data.",
+        "result": {
+          "authorization_id": "authorization-31cfc626f79b4357a24c73083048c2f7",
+          "authorized_at": "2026-09-29T10:03:25.987181Z",
+          "decision": "MOCK_PROMOTIONAL_AUTHORIZATION",
+          "payment_processed": false,
+          "receipt": {
+            "payload": {
+              "acknowledged_at": "2026-09-29T10:03:25.910078Z",
+              "agent_id": "MOCK-AGT-001",
+              "allocation_digest": "d2e128fa54975f4d95c5f04d3974c4116a4c65ff5100f9474b3e4ee52baa8576",
+              "cart_digest": "b870f13da6fcda0ea483dc2a3d607ad7e2c3180e4b0364684ac5ed7dc9cd7204",
+              "channel": "ONLINE_AGENT",
+              "context_digest": "e92d69585b03dfef719f1452ce77aa5c2972694209b1b3943d0adaea4494b8f2",
+              "disclosure_digest": "10dc017d8d98090138714dc0e1d3a40a18ff9f6e9196b230ac6a1cd1cf429ad3",
+              "disclosure_id": "MOCK-DISC-DI-6M",
+              "disclosure_version": "1.0.0",
+              "expires_at": "2026-09-29T10:18:25.943211Z",
+              "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+              "locale": "en-US",
+              "merchant_id": "MOCK-MER-0001",
+              "offer_id": "DI-6M",
+              "offer_version": "1.0.0",
+              "policy_id": "MOCK_DEFAULT",
+              "policy_version": "1.0.0",
+              "presentation_policy_id": "MOCK-PRESENTATION-001",
+              "presentation_policy_version": "1.0.0",
+              "presented_at": "2026-09-29T10:03:25.870659Z",
+              "receipt_id": "receipt-43c3c437f9ff4022836e7771dbb786f1",
+              "renderer_id": "MOCK-RENDERER-CHAT",
+              "renderer_version": "1.0.0",
+              "terms_id": "MOCK-TERMS-001",
+              "terms_version": "1.0.0",
+              "versions_digest": "0bd1fef2cc7af60c0e7895353d523bfdde0f8a37f7e22dae9c8e26c1256b95b2"
+            },
+            "signature": "1cf79a9dcdf0c55a209b768d73f3a868c22828a315a4a87c9fa16a7a72673ea5"
+          },
+          "offer_trust_passport": {
+            "title": "Synthetic Offer Trust Passport",
+            "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+            "timeline": [
+              {
+                "at": "2026-09-29T10:03:25.816644Z",
+                "event": "ELIGIBILITY_EVALUATED",
+                "reference": "b870f13da6fcda0ea483dc2a3d607ad7e2c3180e4b0364684ac5ed7dc9cd7204",
+                "version": 1
+              },
+              {
+                "at": "2026-09-29T10:03:25.860068Z",
+                "event": "DISCLOSURE_ISSUED",
+                "reference": "10dc017d8d98090138714dc0e1d3a40a18ff9f6e9196b230ac6a1cd1cf429ad3",
+                "version": 2
+              },
+              {
+                "at": "2026-09-29T10:03:25.900433Z",
+                "event": "PRESENTATION_VERIFIED",
+                "reference": "10dc017d8d98090138714dc0e1d3a40a18ff9f6e9196b230ac6a1cd1cf429ad3",
+                "version": 3
+              },
+              {
+                "at": "2026-09-29T10:03:25.943444Z",
+                "event": "ACKNOWLEDGMENT_RECEIVED",
+                "reference": "receipt-43c3c437f9ff4022836e7771dbb786f1",
+                "version": 4
+              },
+              {
+                "event": "PROMOTION_AUTHORIZED",
+                "at": "2026-09-29T10:03:25.987196Z",
+                "version": 5,
+                "reference": "authorization-31cfc626f79b4357a24c73083048c2f7"
+              }
+            ],
+            "versions": {
+              "disclosure_id": "MOCK-DISC-DI-6M",
+              "disclosure_legal_approval_id": "MOCK-APPROVAL-001",
+              "disclosure_version": "1.0.0",
+              "legal_approval_id": "MOCK-APPROVAL-001",
+              "offer_id": "DI-6M",
+              "offer_version": "1.0.0",
+              "policy_id": "MOCK_DEFAULT",
+              "policy_version": "1.0.0",
+              "presentation_policy_id": "MOCK-PRESENTATION-001",
+              "presentation_policy_version": "1.0.0",
+              "template_id": "MOCK-TPL-DI-6M",
+              "template_version": "1.0.0",
+              "terms_id": "MOCK-TERMS-001",
+              "terms_version": "1.0.0"
+            },
+            "cart_digest": "b870f13da6fcda0ea483dc2a3d607ad7e2c3180e4b0364684ac5ed7dc9cd7204",
+            "disclosure_digest": "10dc017d8d98090138714dc0e1d3a40a18ff9f6e9196b230ac6a1cd1cf429ad3",
+            "receipt_id": "receipt-43c3c437f9ff4022836e7771dbb786f1",
+            "evidence_limit": "Mock renderer attestation; no authenticated human proof or blockchain claim."
+          }
+        },
+        "next_action": {
+          "tool": "END_AUTHORIZED",
+          "required_inputs": [],
+          "instruction": "Mock authorization is complete. Do not replay it under another idempotency key."
+        },
+        "request_id": "request-37fa983fb61b48eda550e019b4a141d6auth",
+        "correlation_id": "demo-correlation-001",
+        "warning": "SYNTHETIC HACKATHON DATA — NOT APPROVED LEGAL COPY; NOT FOR PRODUCTION.",
+        "code": "offerproof.ok",
+        "trackingId": "request-37fa983fb61b48eda550e019b4a141d6auth",
+        "transient": false
+      }
+    }
+  ],
+  "changed_cart_replay": {
+    "status": "BLOCKED",
+    "journey_id": "journey-098cfa46b29a40a8842e3f0ffd7e3ebc",
+    "journey_state": "AUTHORIZED",
+    "journey_version": 5,
+    "reason_code": "CART_DIGEST_MISMATCH",
+    "message": "The cart changed; previous evidence is invalid.",
+    "result": {},
+    "next_action": {
+      "tool": "start_offer_journey",
+      "required_inputs": [
+        "merchant_id",
+        "agent_id",
+        "request_id",
+        "correlation_id",
+        "idempotency_key",
+        "cart",
+        "program_id",
+        "channel",
+        "renderer_id",
+        "locale",
+        "account_terms_id",
+        "jurisdiction"
+      ],
+      "instruction": "Reevaluate the current cart with a new idempotency key; old evidence is invalid."
+    },
+    "request_id": "request-37fa983fb61b48eda550e019b4a141d6changed",
+    "correlation_id": "demo-correlation-001",
+    "warning": "SYNTHETIC HACKATHON DATA — NOT APPROVED LEGAL COPY; NOT FOR PRODUCTION.",
+    "code": "offerproof.cart_digest_mismatch",
+    "trackingId": "request-37fa983fb61b48eda550e019b4a141d6changed",
+    "transient": false
+  },
+  "success": true
+}

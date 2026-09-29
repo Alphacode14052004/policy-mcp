@@ -1,0 +1,229 @@
+{
+  "data_classification": "SYNTHETIC_HACKATHON_DATA",
+  "not_for_production": true,
+  "schema_version": "1",
+  "records": [
+    {
+      "id": "OK",
+      "version": "1",
+      "message": "Request completed using synthetic data.",
+      "recovery": "FOLLOW_WORKFLOW"
+    },
+    {
+      "id": "PRODUCT_NOT_CONFIGURED",
+      "version": "1",
+      "message": "The submitted SKU is not in the mock product catalog; this is not a jurisdiction-policy decision.",
+      "recovery": "REQUEST_MOCK_CATALOG_UPDATE"
+    },
+    {
+      "id": "TENDER_ALLOCATION_INVALID",
+      "version": "1",
+      "message": "Applied payment must reference purchase lines, reconcile exactly, and not exceed their amounts. A gift card being purchased is not a payment.",
+      "recovery": "CORRECT_APPLIED_TENDER_ALLOCATION"
+    },
+    {
+      "id": "TENDER_POLICY_UNSUPPORTED",
+      "version": "1",
+      "message": "The selected mock offer does not support this applied payment type.",
+      "recovery": "SELECT_SUPPORTED_PAYMENT_ARRANGEMENT"
+    },
+    {
+      "id": "APPLIED_TENDER_CONFIRMATION_REQUIRED",
+      "version": "1",
+      "message": "Ask the consumer to confirm the exact existing gift-card amount to apply as payment.",
+      "recovery": "CONFIRM_APPLIED_TENDER"
+    },
+    {
+      "id": "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM",
+      "version": "1",
+      "message": "Eligible subtotal is below this offer's minimum.",
+      "recovery": "SELECT_ELIGIBLE_OFFER"
+    },
+    {
+      "id": "ITEM_TYPE_EXCLUDED",
+      "version": "1",
+      "message": "This line item is excluded from promotional financing.",
+      "recovery": "CONFIRM_ALLOCATION"
+    },
+    {
+      "id": "OFFER_EXPIRED",
+      "version": "1",
+      "message": "The selected offer is outside its effective window.",
+      "recovery": "START_NEW_JOURNEY"
+    },
+    {
+      "id": "OFFER_SCOPE_MISMATCH",
+      "version": "1",
+      "message": "The offer does not match the configured scope.",
+      "recovery": "SELECT_ELIGIBLE_OFFER"
+    },
+    {
+      "id": "ELIGIBLE_SUBTOTAL_ABOVE_MAXIMUM",
+      "version": "1",
+      "message": "Eligible subtotal exceeds this offer's maximum.",
+      "recovery": "SELECT_ELIGIBLE_OFFER"
+    },
+    {
+      "id": "NO_ELIGIBLE_PROMOTION",
+      "version": "1",
+      "message": "No promotional offer qualifies; review the standard revolving fallback.",
+      "recovery": "REVIEW_STANDARD_FALLBACK"
+    },
+    {
+      "id": "ALLOCATION_CONFIRMATION_REQUIRED",
+      "version": "1",
+      "message": "Ask the consumer to confirm the excluded balance disposition.",
+      "recovery": "CONFIRM_ALLOCATION"
+    },
+    {
+      "id": "POLICY_REVIEW_REQUIRED",
+      "version": "1",
+      "message": "Approved mock policy cannot be resolved for this context.",
+      "recovery": "REQUEST_AUTHORITATIVE_POLICY_REVIEW"
+    },
+    {
+      "id": "TERMS_VERSION_CHANGED",
+      "version": "1",
+      "message": "Account terms changed; previous evidence is invalid.",
+      "recovery": "PREPARE_DISCLOSURE_AGAIN"
+    },
+    {
+      "id": "POLICY_VERSION_CHANGED",
+      "version": "1",
+      "message": "Policy changed; previous evidence is invalid.",
+      "recovery": "PREPARE_DISCLOSURE_AGAIN"
+    },
+    {
+      "id": "OFFER_VERSION_CHANGED",
+      "version": "1",
+      "message": "Offer configuration changed; reevaluate the cart.",
+      "recovery": "START_NEW_JOURNEY"
+    },
+    {
+      "id": "CART_DIGEST_MISMATCH",
+      "version": "1",
+      "message": "The cart changed; previous evidence is invalid.",
+      "recovery": "START_NEW_JOURNEY"
+    },
+    {
+      "id": "DISCLOSURE_DIGEST_MISMATCH",
+      "version": "1",
+      "message": "Protected disclosure text or version does not match.",
+      "recovery": "PREPARE_DISCLOSURE_AGAIN"
+    },
+    {
+      "id": "DISCLOSURE_NOT_PRESENTED",
+      "version": "1",
+      "message": "Disclosure delivery does not establish presentation.",
+      "recovery": "PRESENT_DISCLOSURE"
+    },
+    {
+      "id": "ACKNOWLEDGMENT_REQUIRED",
+      "version": "1",
+      "message": "Capture an affirmative consumer acknowledgment after presentation.",
+      "recovery": "CAPTURE_ACKNOWLEDGMENT"
+    },
+    {
+      "id": "PRESENTATION_CAPABILITY_UNSUPPORTED",
+      "version": "1",
+      "message": "Renderer does not support the required presentation policy.",
+      "recovery": "USE_SUPPORTED_RENDERER"
+    },
+    {
+      "id": "PRESENTATION_EVIDENCE_INVALID",
+      "version": "1",
+      "message": "Presentation attestation failed required checks.",
+      "recovery": "PRESENT_DISCLOSURE_AGAIN"
+    },
+    {
+      "id": "INVALID_STATE_TRANSITION",
+      "version": "1",
+      "message": "This action cannot advance the current journey state.",
+      "recovery": "RECOVER_JOURNEY_STATUS"
+    },
+    {
+      "id": "STALE_JOURNEY_VERSION",
+      "version": "1",
+      "message": "Another request advanced this journey.",
+      "recovery": "RECOVER_JOURNEY_STATUS"
+    },
+    {
+      "id": "RECEIPT_INVALID",
+      "version": "1",
+      "message": "Receipt verification failed.",
+      "recovery": "RECOVER_JOURNEY_STATUS"
+    },
+    {
+      "id": "RECEIPT_EXPIRED",
+      "version": "1",
+      "message": "The evidence receipt expired; collect new evidence.",
+      "recovery": "PREPARE_DISCLOSURE_AGAIN"
+    },
+    {
+      "id": "IDENTITY_BINDING_MISMATCH",
+      "version": "1",
+      "message": "Caller identity does not match the journey.",
+      "recovery": "USE_BOUND_IDENTITY"
+    },
+    {
+      "id": "IDEMPOTENCY_CONFLICT",
+      "version": "1",
+      "message": "This idempotency key belongs to a different request.",
+      "recovery": "USE_NEW_IDEMPOTENCY_KEY"
+    },
+    {
+      "id": "AUDIT_UNAVAILABLE",
+      "version": "1",
+      "message": "Evidence cannot be persisted; this action is blocked.",
+      "recovery": "RESTORE_AUDIT_AND_RETRY"
+    },
+    {
+      "id": "UNSUPPORTED_CURRENCY",
+      "version": "1",
+      "message": "Only the configured synthetic USD currency is supported.",
+      "recovery": "SUPPLY_SUPPORTED_CURRENCY"
+    },
+    {
+      "id": "UNSUPPORTED_LOCALE",
+      "version": "1",
+      "message": "This renderer has no approved disclosure in that locale.",
+      "recovery": "REQUEST_SUPPORTED_LOCALE_JOURNEY"
+    },
+    {
+      "id": "PROHIBITED_SENSITIVE_DATA",
+      "version": "1",
+      "message": "Sensitive customer or account data is prohibited.",
+      "recovery": "REMOVE_SENSITIVE_DATA"
+    },
+    {
+      "id": "AUTHORITATIVE_NOTICE_FLOW_REQUIRED",
+      "version": "1",
+      "message": "No credit decision was made. Use the authoritative notice process; do not generate an adverse-action notice.",
+      "recovery": "ROUTE_TO_AUTHORITATIVE_NOTICE_FLOW"
+    },
+    {
+      "id": "SCHEMA_VALIDATION_FAILED",
+      "version": "1",
+      "message": "Request does not match the strict synthetic tool schema.",
+      "recovery": "CORRECT_REQUEST_SCHEMA"
+    },
+    {
+      "id": "INTERNAL_ERROR",
+      "version": "1",
+      "message": "The request could not be processed safely.",
+      "recovery": "CONTACT_DEMO_OPERATOR"
+    },
+    {
+      "id": "DECLINED",
+      "version": "1",
+      "message": "Consumer declined. This journey is closed.",
+      "recovery": "END_DECLINED"
+    },
+    {
+      "id": "EXPIRED",
+      "version": "1",
+      "message": "The journey expired. Its evidence cannot be used.",
+      "recovery": "START_NEW_JOURNEY"
+    }
+  ]
+}

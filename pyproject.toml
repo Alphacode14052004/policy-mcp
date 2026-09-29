@@ -1,0 +1,11 @@
+[project]
+name = "offerproof-mcp"
+version = "0.1.0"
+description = "Synthetic deterministic promotion gateway and evidence layer"
+requires-python = ">=3.12"
+dependencies = ["mcp==2.2.0"]
+
+[tool.offerproof]
+target-python = "3.13"
+target-platform = "win_amd64"
+synthetic-only = true

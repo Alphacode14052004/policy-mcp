@@ -1,0 +1,10 @@
+metric,baseline,post_change,target_or_hypothesis,method,measured_status
+partner_integration_hours,NOT_MEASURED,NOT_MEASURED,HYPOTHESIS reduction,Time equivalent synthetic partner tasks with and without gateway,NOT_MEASURED
+legal_review_cycle_time,NOT_MEASURED,NOT_MEASURED,HYPOTHESIS reduction,Track authoritative reviewer effort and elapsed days without attributing unrelated delays,NOT_MEASURED
+disclosure_defect_rate,NOT_MEASURED,NOT_MEASURED,HYPOTHESIS reduction,Independent rendering and copy audit over matched samples,NOT_MEASURED
+unsupported_attempts_blocked,NOT_MEASURED,See eval/results/benchmark.json,TARGET all known invalid cases blocked,Deterministic malformed-call workload,MEASURED_SYNTHETIC_ONLY
+evidence_completeness,NOT_MEASURED,See eval/results/benchmark.json,TARGET 100 percent successful authorizations with receipts,Inspect signed bindings and audit outcome in known fixture runs,MEASURED_SYNTHETIC_ONLY
+tool_latency_p95_ms,NOT_MEASURED,See eval/results/benchmark.json,TARGET under 300 excluding LLM,Report workload and transport scope with sample size,MEASURED_MALFORMED_CORE_CALLS_ONLY
+mean_time_to_diagnose_failed_journey,NOT_MEASURED,NOT_MEASURED,HYPOTHESIS reduction,Blind timed diagnosis task using evidence IDs versus existing integration,NOT_MEASURED
+live_natural_prompt_success_rate,NOT_MEASURED,0 prompts executed,TARGET 200 varied prompts,Run eval/natural-prompts.jsonl in fresh Copilot chats with transcripts,NOT_RUN
+consecutive_live_demo_successes,NOT_MEASURED,0 live rehearsals,TARGET 20,Complete timed runbook and binary gates in eval/rehearsals.csv,NOT_RUN

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "merchant_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^MOCK-[A-Z0-9-]+$"
+    },
+    "agent_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^MOCK-[A-Z0-9-]+$"
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "correlation_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "journey_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "expected_version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100000000
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "offer_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "allocation_confirmation": {
+      "type": "object",
+      "properties": {
+        "confirmed": {
+          "type": "boolean"
+        },
+        "excluded_disposition": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "enum": [
+            "SEPARATE_TENDER",
+            "STANDARD_REVOLVING"
+          ]
+        },
+        "confirmed_by": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "enum": [
+            "CONSUMER"
+          ]
+        }
+      },
+      "required": [
+        "confirmed",
+        "excluded_disposition",
+        "confirmed_by"
+      ],
+      "additionalProperties": false
+    },
+    "applied_tender_confirmation": {
+      "type": "object",
+      "properties": {
+        "confirmed": {
+          "type": "boolean"
+        },
+        "applied_tender_cents": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000000
+        },
+        "confirmed_by": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "enum": [
+            "CONSUMER"
+          ]
+        }
+      },
+      "required": [
+        "confirmed",
+        "applied_tender_cents",
+        "confirmed_by"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "merchant_id",
+    "agent_id",
+    "request_id",
+    "correlation_id",
+    "journey_id",
+    "expected_version",
+    "idempotency_key",
+    "offer_id"
+  ],
+  "additionalProperties": false
+}

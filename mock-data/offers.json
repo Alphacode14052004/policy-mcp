@@ -1,0 +1,461 @@
+{
+  "data_classification": "SYNTHETIC_HACKATHON_DATA",
+  "not_for_production": true,
+  "schema_version": "1",
+  "records": [
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.1.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": "DI-6M:1.0.0",
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "DI-6M",
+      "name": "Mock DI-6M",
+      "plan_type": "DEFERRED_INTEREST",
+      "product_legal_type": "OPEN_END_REVOLVING",
+      "minimum_cents": 20000,
+      "maximum_cents": 2000000,
+      "eligible_categories": [
+        "APPLIANCE",
+        "SOFA"
+      ],
+      "eligibility_basis": "ELIGIBLE_BALANCE_AFTER_APPLIED_TENDER",
+      "allowed_applied_tender_types": [
+        "GIFT_CARD"
+      ],
+      "excluded_item_types": [
+        "GIFT_CARD",
+        "SERVICE"
+      ],
+      "tax_eligible": false,
+      "shipping_eligible": false,
+      "merchant_ids": [
+        "MOCK-MER-0001"
+      ],
+      "program_ids": [
+        "MOCK-PRG-HOM"
+      ],
+      "channels": [
+        "ONLINE_AGENT"
+      ],
+      "account_scope": "MOCK_EXISTING_ACCOUNT",
+      "term_months": 6,
+      "promo_apr_bps": null,
+      "apr_source": "ACCOUNT_TERMS",
+      "allow_partial_financing": true,
+      "allow_mixed_tender": true,
+      "allow_multi_promo": false,
+      "reward_stacking": "NONE",
+      "terms_id": "MOCK-TERMS-001",
+      "terms_version": "1.0.0",
+      "disclosure_id": "MOCK-DISC-DI-6M",
+      "disclosure_version": "1.1.0",
+      "template_id": "MOCK-TPL-DI-6M",
+      "template_version": "1.1.0",
+      "regulatory_profile": "MOCK-REGULATORY-001",
+      "policy_bundle_ids": [
+        "MOCK_DEFAULT",
+        "MOCK_STATE_CAP"
+      ],
+      "jurisdiction_profile_ids": [
+        "MOCK_PROFILE_DEFAULT",
+        "MOCK_PROFILE_CAP"
+      ],
+      "presentation_policy_id": "MOCK-PRESENTATION-001",
+      "presentation_policy_version": "1.0.0",
+      "acknowledgment_required": true,
+      "custom_schedule_bps": [],
+      "reward": null,
+      "checksum": "50f4cd273645633c6b8a775144f376caf9e8e921fb7e022d3e6f13470fa2e1d9"
+    },
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.1.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": "EPP-12-0APR:1.0.0",
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "EPP-12-0APR",
+      "name": "Mock EPP-12-0APR",
+      "plan_type": "EQUAL_PAY_NO_INTEREST",
+      "product_legal_type": "OPEN_END_REVOLVING",
+      "minimum_cents": 75000,
+      "maximum_cents": 2000000,
+      "eligible_categories": [
+        "APPLIANCE",
+        "SOFA"
+      ],
+      "eligibility_basis": "ELIGIBLE_BALANCE_AFTER_APPLIED_TENDER",
+      "allowed_applied_tender_types": [
+        "GIFT_CARD"
+      ],
+      "excluded_item_types": [
+        "GIFT_CARD",
+        "SERVICE"
+      ],
+      "tax_eligible": false,
+      "shipping_eligible": false,
+      "merchant_ids": [
+        "MOCK-MER-0001"
+      ],
+      "program_ids": [
+        "MOCK-PRG-HOM"
+      ],
+      "channels": [
+        "ONLINE_AGENT"
+      ],
+      "account_scope": "MOCK_EXISTING_ACCOUNT",
+      "term_months": 12,
+      "promo_apr_bps": 0,
+      "apr_source": "OFFER",
+      "allow_partial_financing": true,
+      "allow_mixed_tender": true,
+      "allow_multi_promo": false,
+      "reward_stacking": "NONE",
+      "terms_id": "MOCK-TERMS-001",
+      "terms_version": "1.0.0",
+      "disclosure_id": "MOCK-DISC-EPP-12-0APR",
+      "disclosure_version": "1.1.0",
+      "template_id": "MOCK-TPL-EPP-12-0APR",
+      "template_version": "1.1.0",
+      "regulatory_profile": "MOCK-REGULATORY-001",
+      "policy_bundle_ids": [
+        "MOCK_DEFAULT",
+        "MOCK_STATE_CAP"
+      ],
+      "jurisdiction_profile_ids": [
+        "MOCK_PROFILE_DEFAULT",
+        "MOCK_PROFILE_CAP"
+      ],
+      "presentation_policy_id": "MOCK-PRESENTATION-001",
+      "presentation_policy_version": "1.0.0",
+      "acknowledgment_required": true,
+      "custom_schedule_bps": [],
+      "reward": null,
+      "checksum": "f9146fd9421a86b3996aeaffdb1c4b0566b4240fdd07eeb7c19bde4ec6be18c6"
+    },
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.1.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": "REDUCED-12:1.0.0",
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "REDUCED-12",
+      "name": "Mock REDUCED-12",
+      "plan_type": "REDUCED_APR_FIXED_TERM",
+      "product_legal_type": "OPEN_END_REVOLVING",
+      "minimum_cents": 90000,
+      "maximum_cents": 2000000,
+      "eligible_categories": [
+        "APPLIANCE",
+        "SOFA"
+      ],
+      "eligibility_basis": "ELIGIBLE_BALANCE_AFTER_APPLIED_TENDER",
+      "allowed_applied_tender_types": [
+        "GIFT_CARD"
+      ],
+      "excluded_item_types": [
+        "GIFT_CARD",
+        "SERVICE"
+      ],
+      "tax_eligible": false,
+      "shipping_eligible": false,
+      "merchant_ids": [
+        "MOCK-MER-0001"
+      ],
+      "program_ids": [
+        "MOCK-PRG-HOM"
+      ],
+      "channels": [
+        "ONLINE_AGENT"
+      ],
+      "account_scope": "MOCK_EXISTING_ACCOUNT",
+      "term_months": 12,
+      "promo_apr_bps": 789,
+      "apr_source": "OFFER",
+      "allow_partial_financing": true,
+      "allow_mixed_tender": true,
+      "allow_multi_promo": false,
+      "reward_stacking": "NONE",
+      "terms_id": "MOCK-TERMS-001",
+      "terms_version": "1.0.0",
+      "disclosure_id": "MOCK-DISC-REDUCED-12",
+      "disclosure_version": "1.1.0",
+      "template_id": "MOCK-TPL-REDUCED-12",
+      "template_version": "1.1.0",
+      "regulatory_profile": "MOCK-REGULATORY-001",
+      "policy_bundle_ids": [
+        "MOCK_DEFAULT",
+        "MOCK_STATE_CAP"
+      ],
+      "jurisdiction_profile_ids": [
+        "MOCK_PROFILE_DEFAULT",
+        "MOCK_PROFILE_CAP"
+      ],
+      "presentation_policy_id": "MOCK-PRESENTATION-001",
+      "presentation_policy_version": "1.0.0",
+      "acknowledgment_required": true,
+      "custom_schedule_bps": [],
+      "reward": null,
+      "checksum": "788a02f8cc1acf70f8882eecfff71909e6c25f52f9d396708e26fd83ec5ec1b9"
+    },
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.1.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": "CUSTOM-4:1.0.0",
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "CUSTOM-4",
+      "name": "Mock CUSTOM-4",
+      "plan_type": "CUSTOM_AMORTIZATION",
+      "product_legal_type": "OPEN_END_REVOLVING",
+      "minimum_cents": 100000,
+      "maximum_cents": 2000000,
+      "eligible_categories": [
+        "APPLIANCE",
+        "SOFA"
+      ],
+      "eligibility_basis": "ELIGIBLE_BALANCE_AFTER_APPLIED_TENDER",
+      "allowed_applied_tender_types": [
+        "GIFT_CARD"
+      ],
+      "excluded_item_types": [
+        "GIFT_CARD",
+        "SERVICE"
+      ],
+      "tax_eligible": false,
+      "shipping_eligible": false,
+      "merchant_ids": [
+        "MOCK-MER-0001"
+      ],
+      "program_ids": [
+        "MOCK-PRG-HOM"
+      ],
+      "channels": [
+        "ONLINE_AGENT"
+      ],
+      "account_scope": "MOCK_EXISTING_ACCOUNT",
+      "term_months": 4,
+      "promo_apr_bps": 0,
+      "apr_source": "OFFER",
+      "allow_partial_financing": true,
+      "allow_mixed_tender": true,
+      "allow_multi_promo": false,
+      "reward_stacking": "NONE",
+      "terms_id": "MOCK-TERMS-001",
+      "terms_version": "1.0.0",
+      "disclosure_id": "MOCK-DISC-CUSTOM-4",
+      "disclosure_version": "1.1.0",
+      "template_id": "MOCK-TPL-CUSTOM-4",
+      "template_version": "1.1.0",
+      "regulatory_profile": "MOCK-REGULATORY-001",
+      "policy_bundle_ids": [
+        "MOCK_DEFAULT",
+        "MOCK_STATE_CAP"
+      ],
+      "jurisdiction_profile_ids": [
+        "MOCK_PROFILE_DEFAULT",
+        "MOCK_PROFILE_CAP"
+      ],
+      "presentation_policy_id": "MOCK-PRESENTATION-001",
+      "presentation_policy_version": "1.0.0",
+      "acknowledgment_required": true,
+      "custom_schedule_bps": [
+        4000,
+        3000,
+        2000,
+        1000
+      ],
+      "reward": null,
+      "checksum": "01114f55a300dcb7fc521ef768395b3419676cc07e1f10676e63b461e370e0a0"
+    },
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.1.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": "CASHBACK-REV:1.0.0",
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "CASHBACK-REV",
+      "name": "Mock CASHBACK-REV",
+      "plan_type": "CASHBACK_REVOLVING",
+      "product_legal_type": "OPEN_END_REVOLVING",
+      "minimum_cents": 100000,
+      "maximum_cents": 2000000,
+      "eligible_categories": [
+        "APPLIANCE",
+        "SOFA"
+      ],
+      "eligibility_basis": "ELIGIBLE_BALANCE_AFTER_APPLIED_TENDER",
+      "allowed_applied_tender_types": [
+        "GIFT_CARD"
+      ],
+      "excluded_item_types": [
+        "GIFT_CARD",
+        "SERVICE"
+      ],
+      "tax_eligible": false,
+      "shipping_eligible": false,
+      "merchant_ids": [
+        "MOCK-MER-0001"
+      ],
+      "program_ids": [
+        "MOCK-PRG-HOM"
+      ],
+      "channels": [
+        "ONLINE_AGENT"
+      ],
+      "account_scope": "MOCK_EXISTING_ACCOUNT",
+      "term_months": 0,
+      "promo_apr_bps": null,
+      "apr_source": "ACCOUNT_TERMS",
+      "allow_partial_financing": true,
+      "allow_mixed_tender": true,
+      "allow_multi_promo": false,
+      "reward_stacking": "NONE",
+      "terms_id": "MOCK-TERMS-001",
+      "terms_version": "1.0.0",
+      "disclosure_id": "MOCK-DISC-CASHBACK-REV",
+      "disclosure_version": "1.1.0",
+      "template_id": "MOCK-TPL-CASHBACK-REV",
+      "template_version": "1.1.0",
+      "regulatory_profile": "MOCK-REGULATORY-001",
+      "policy_bundle_ids": [
+        "MOCK_DEFAULT",
+        "MOCK_STATE_CAP"
+      ],
+      "jurisdiction_profile_ids": [
+        "MOCK_PROFILE_DEFAULT",
+        "MOCK_PROFILE_CAP"
+      ],
+      "presentation_policy_id": "MOCK-PRESENTATION-001",
+      "presentation_policy_version": "1.0.0",
+      "acknowledgment_required": true,
+      "custom_schedule_bps": [],
+      "reward": {
+        "rate_bps": 100,
+        "cap_cents": 2000,
+        "vesting_days": 30,
+        "reversal": "ON_RETURN"
+      },
+      "checksum": "e7479a12c2794ea5623efe44e0ef442423f1668fba41259d5aba645f0a228cd8"
+    },
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.1.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": "STANDARD-REV:1.0.0",
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "STANDARD-REV",
+      "name": "Mock STANDARD-REV",
+      "plan_type": "STANDARD_REVOLVING",
+      "product_legal_type": "OPEN_END_REVOLVING",
+      "minimum_cents": 1,
+      "maximum_cents": 2000000,
+      "eligible_categories": [
+        "APPLIANCE",
+        "SOFA"
+      ],
+      "eligibility_basis": "ELIGIBLE_BALANCE_AFTER_APPLIED_TENDER",
+      "allowed_applied_tender_types": [
+        "GIFT_CARD"
+      ],
+      "excluded_item_types": [
+        "GIFT_CARD",
+        "SERVICE"
+      ],
+      "tax_eligible": false,
+      "shipping_eligible": false,
+      "merchant_ids": [
+        "MOCK-MER-0001"
+      ],
+      "program_ids": [
+        "MOCK-PRG-HOM"
+      ],
+      "channels": [
+        "ONLINE_AGENT"
+      ],
+      "account_scope": "MOCK_EXISTING_ACCOUNT",
+      "term_months": 0,
+      "promo_apr_bps": null,
+      "apr_source": "ACCOUNT_TERMS",
+      "allow_partial_financing": true,
+      "allow_mixed_tender": true,
+      "allow_multi_promo": false,
+      "reward_stacking": "NONE",
+      "terms_id": "MOCK-TERMS-001",
+      "terms_version": "1.0.0",
+      "disclosure_id": "MOCK-DISC-STANDARD-REV",
+      "disclosure_version": "1.1.0",
+      "template_id": "MOCK-TPL-STANDARD-REV",
+      "template_version": "1.1.0",
+      "regulatory_profile": "MOCK-REGULATORY-001",
+      "policy_bundle_ids": [
+        "MOCK_DEFAULT",
+        "MOCK_STATE_CAP"
+      ],
+      "jurisdiction_profile_ids": [
+        "MOCK_PROFILE_DEFAULT",
+        "MOCK_PROFILE_CAP"
+      ],
+      "presentation_policy_id": "MOCK-PRESENTATION-001",
+      "presentation_policy_version": "1.0.0",
+      "acknowledgment_required": true,
+      "custom_schedule_bps": [],
+      "reward": null,
+      "checksum": "cae7644e0bfd1ac2e00aa3fae70a973aea4a63610417352392f88fbcaae22139"
+    }
+  ]
+}

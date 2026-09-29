@@ -1,0 +1,23 @@
+{
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "workload": "Deterministic direct-core calls: ten malformed/adversarial families with varied payloads; not a live LLM evaluation.",
+  "adversarial_calls": 1000,
+  "blocked_calls": 1000,
+  "reason_counts": {
+    "SCHEMA_VALIDATION_FAILED": 600,
+    "UNSUPPORTED_CURRENCY": 100,
+    "UNSUPPORTED_LOCALE": 100,
+    "POLICY_REVIEW_REQUIRED": 100,
+    "PROHIBITED_SENSITIVE_DATA": 100
+  },
+  "adversarial_call_p95_ms": 28.1128,
+  "latency_scope": "Direct core, includes JSON validation, SQLite attempt/final commits; excludes MCP transport, LLM and human time.",
+  "automated_fixture_repetitions": 20,
+  "successful_authorizations_with_receipts": 20,
+  "changed_cart_replays_blocked": 20,
+  "audit_chain_valid": true,
+  "live_copilot_rehearsals": 0,
+  "natural_language_prompts_executed": 0,
+  "business_savings_measured": false
+}

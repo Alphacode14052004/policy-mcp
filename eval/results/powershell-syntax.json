@@ -1,0 +1,18 @@
+[
+  {
+    "script": "build_vendor.ps1",
+    "errors": 0
+  },
+  {
+    "script": "reset_demo.ps1",
+    "errors": 0
+  },
+  {
+    "script": "smoke_test.ps1",
+    "errors": 0
+  },
+  {
+    "script": "verify_offline.ps1",
+    "errors": 0
+  }
+]

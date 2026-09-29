@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "enum": [
+        "COMPLETED",
+        "BLOCKED",
+        "INPUT_REQUIRED"
+      ]
+    },
+    "journey_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "journey_state": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "enum": [
+        "NONE",
+        "STARTED",
+        "OFFERS_EVALUATED",
+        "DISCLOSURE_ISSUED",
+        "DISCLOSURE_PRESENTED",
+        "ACKNOWLEDGED",
+        "AUTHORIZED",
+        "DECLINED",
+        "EXPIRED",
+        "INVALIDATED"
+      ]
+    },
+    "journey_version": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100000000
+    },
+    "reason_code": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "result": {
+      "type": "object"
+    },
+    "next_action": {
+      "type": "object",
+      "properties": {
+        "tool": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "required_inputs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 30
+        },
+        "instruction": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      },
+      "required": [
+        "tool",
+        "required_inputs",
+        "instruction"
+      ],
+      "additionalProperties": false
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "correlation_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "warning": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "code": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "trackingId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "transient": {
+      "type": "boolean"
+    },
+    "server_time": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "format": "date-time",
+      "description": "UTC when this response was constructed. An idempotent replay retains its original timestamp; get_offer_journey_status returns a fresh clock reading. This is diagnostic information, never presentation or acknowledgment evidence."
+    }
+  },
+  "required": [
+    "status",
+    "journey_id",
+    "journey_state",
+    "journey_version",
+    "reason_code",
+    "message",
+    "result",
+    "next_action",
+    "request_id",
+    "correlation_id",
+    "warning",
+    "code",
+    "trackingId",
+    "transient"
+  ],
+  "additionalProperties": false
+}

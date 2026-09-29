@@ -1,0 +1,22 @@
+Before giving the repository to a judge or another developer, confirm:
+
+- [ ] `start_offer_journey` computes per-offer eligible subtotal, not cart total.
+- [ ] `prepare_offer_disclosure` returns canonical, versioned, non-paraphrasable mock copy.
+- [ ] `record_disclosure_outcome` records failure as well as success and distinguishes delivery from presentation.
+- [ ] `authorize_promotional_checkout` fails closed on missing, invalid, or stale evidence.
+- [ ] `get_offer_journey_status` supplies one legal recovery step.
+- [ ] Every mutating call has journey ID, expected version, and idempotency key.
+- [ ] Every call creates attempted and final audit evidence.
+- [ ] Gift cards and other excluded items have an explicit disposition.
+- [ ] Deferred interest, equal payment, reduced APR, custom amortization, cashback, and fallback are semantically distinct.
+- [ ] Legal policy is versioned data; billing state alone never determines a real APR rule.
+- [ ] Mock data is visibly synthetic and contains no PII.
+- [ ] SQLite persistence, HMAC receipts, and stale-change invalidation work.
+- [ ] stdout contains only MCP protocol traffic.
+- [ ] Python 3.13 starts from vendored dependencies without pip on the target.
+- [ ] VS Code configuration works from the repository path.
+- [ ] The plain structured response works even when the optional MCP App does not.
+- [ ] The natural demo prompt contains no tool instructions.
+- [ ] The demo is under five minutes and includes one quick adversarial block.
+- [ ] Test and benchmark claims are based on actual recorded runs.
+- [ ] Documentation uses the approved legal/product boundary.

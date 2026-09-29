@@ -1,0 +1,128 @@
+{
+  "scope": "Fresh process using the VS Code command; evaluation only, no consent or authorization; not the existing Copilot session",
+  "scenarios": {
+    "existing_gift_card_payment": {
+      "status": "COMPLETED",
+      "reason_code": "OK",
+      "journey_id": "journey-73132da8c14f434381d765072fb626d0",
+      "cart_total_cents": 75000,
+      "applied_tender_cents": 10000,
+      "remaining_balance_cents": 65000,
+      "gift_card_purchase_cents": 0,
+      "offers": [
+        {
+          "offer_id": "CASHBACK-REV",
+          "eligible": false,
+          "eligible_subtotal_cents": 65000,
+          "excluded_cents": 0,
+          "reason_codes": [
+            "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+          ]
+        },
+        {
+          "offer_id": "CUSTOM-4",
+          "eligible": false,
+          "eligible_subtotal_cents": 65000,
+          "excluded_cents": 0,
+          "reason_codes": [
+            "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+          ]
+        },
+        {
+          "offer_id": "DI-6M",
+          "eligible": true,
+          "eligible_subtotal_cents": 65000,
+          "excluded_cents": 0,
+          "reason_codes": []
+        },
+        {
+          "offer_id": "EPP-12-0APR",
+          "eligible": false,
+          "eligible_subtotal_cents": 65000,
+          "excluded_cents": 0,
+          "reason_codes": [
+            "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+          ]
+        },
+        {
+          "offer_id": "REDUCED-12",
+          "eligible": false,
+          "eligible_subtotal_cents": 65000,
+          "excluded_cents": 0,
+          "reason_codes": [
+            "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+          ]
+        },
+        {
+          "offer_id": "STANDARD-REV",
+          "eligible": true,
+          "eligible_subtotal_cents": 65000,
+          "excluded_cents": 0,
+          "reason_codes": []
+        }
+      ]
+    },
+    "gift_card_as_purchase": {
+      "status": "COMPLETED",
+      "reason_code": "OK",
+      "journey_id": "journey-a53c2b8d8d514a4aa451bb9ff1ef3a25",
+      "cart_total_cents": 85000,
+      "applied_tender_cents": 0,
+      "remaining_balance_cents": 85000,
+      "gift_card_purchase_cents": 10000,
+      "offers": [
+        {
+          "offer_id": "CASHBACK-REV",
+          "eligible": false,
+          "eligible_subtotal_cents": 75000,
+          "excluded_cents": 10000,
+          "reason_codes": [
+            "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+          ]
+        },
+        {
+          "offer_id": "CUSTOM-4",
+          "eligible": false,
+          "eligible_subtotal_cents": 75000,
+          "excluded_cents": 10000,
+          "reason_codes": [
+            "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+          ]
+        },
+        {
+          "offer_id": "DI-6M",
+          "eligible": true,
+          "eligible_subtotal_cents": 75000,
+          "excluded_cents": 10000,
+          "reason_codes": []
+        },
+        {
+          "offer_id": "EPP-12-0APR",
+          "eligible": true,
+          "eligible_subtotal_cents": 75000,
+          "excluded_cents": 10000,
+          "reason_codes": []
+        },
+        {
+          "offer_id": "REDUCED-12",
+          "eligible": false,
+          "eligible_subtotal_cents": 75000,
+          "excluded_cents": 10000,
+          "reason_codes": [
+            "ELIGIBLE_SUBTOTAL_BELOW_MINIMUM"
+          ]
+        },
+        {
+          "offer_id": "STANDARD-REV",
+          "eligible": true,
+          "eligible_subtotal_cents": 75000,
+          "excluded_cents": 10000,
+          "reason_codes": []
+        }
+      ]
+    }
+  },
+  "tool_count": 5,
+  "sofa_in_tool_description": true,
+  "applied_tenders_in_schema": true
+}

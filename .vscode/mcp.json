@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "offerProof": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.build/python313/python.exe",
+      "args": ["${workspaceFolder}/run_mcp.py"],
+      "cwd": "${workspaceFolder}",
+      "dev": {"watch": ["offerproof/**/*.py", "run_mcp.py", "mock-data/*.json"]},
+      "env": {"PYTHONUNBUFFERED": "1", "PYTHONIOENCODING": "utf-8", "OTEL_SDK_DISABLED": "true"}
+    }
+  }
+}

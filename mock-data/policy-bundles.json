@@ -1,0 +1,77 @@
+{
+  "data_classification": "SYNTHETIC_HACKATHON_DATA",
+  "not_for_production": true,
+  "schema_version": "1",
+  "records": [
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.0.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": null,
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "MOCK_DEFAULT",
+      "fictional": true,
+      "effective_terms": {
+        "standard_apr_override_bps": null
+      },
+      "control_routes": [
+        "REG_Z_REVIEW",
+        "DEFERRED_INTEREST_SERVICING_BOUNDARY",
+        "UDAAP_WORDING",
+        "REG_B_NOTICE_ROUTING",
+        "FCRA_REPORT_BOUNDARY",
+        "MLA_SCRA_ROUTING",
+        "STATE_PREEMPTION_REVIEW",
+        "ESIGN_PRESENTATION",
+        "GLBA_MINIMIZATION",
+        "ACCESSIBILITY_LANGUAGE"
+      ],
+      "explanation_code": "MOCK_POLICY_APPLIED",
+      "checksum": "951fce6416e39fa8d6474958ac5bdb241b8a871b2f3ecd1e57f33a6a90e9f0b2"
+    },
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.0.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": null,
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "MOCK_STATE_CAP",
+      "fictional": true,
+      "effective_terms": {
+        "standard_apr_override_bps": 1234
+      },
+      "control_routes": [
+        "REG_Z_REVIEW",
+        "DEFERRED_INTEREST_SERVICING_BOUNDARY",
+        "UDAAP_WORDING",
+        "REG_B_NOTICE_ROUTING",
+        "FCRA_REPORT_BOUNDARY",
+        "MLA_SCRA_ROUTING",
+        "STATE_PREEMPTION_REVIEW",
+        "ESIGN_PRESENTATION",
+        "GLBA_MINIMIZATION",
+        "ACCESSIBILITY_LANGUAGE"
+      ],
+      "explanation_code": "MOCK_POLICY_APPLIED",
+      "checksum": "9c4574e2ddbe192cf577c3bcb98f732fc3c880668657abfa3114b02829bfb125"
+    }
+  ]
+}

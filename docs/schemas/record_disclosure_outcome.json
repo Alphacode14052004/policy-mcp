@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "merchant_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^MOCK-[A-Z0-9-]+$"
+    },
+    "agent_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^MOCK-[A-Z0-9-]+$"
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "correlation_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "journey_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "expected_version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100000000
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+    },
+    "renderer_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^MOCK-[A-Z0-9-]+$"
+    },
+    "cart_digest": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "disclosure_digest": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "outcome": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "enum": [
+        "PRESENTED",
+        "PRESENTATION_FAILED",
+        "DECLINED",
+        "ACKNOWLEDGED",
+        "EXPIRED"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "attestation_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "enum": [
+            "MOCK_RENDERER_ATTESTATION"
+          ]
+        },
+        "rendered_at": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40,
+          "format": "date-time",
+          "description": "Actual UTC time captured by the renderer after displaying the issued final disclosure. Must be at or after issued_at, not in the future, and no more than 900 seconds old at validation. Never guess or copy server_time, journey creation time, preview time or issued_at as evidence."
+        },
+        "locale": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "channel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "renderer_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "viewport": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "enum": [
+            "DESKTOP",
+            "MOBILE",
+            "CHAT"
+          ]
+        },
+        "required_sections_shown": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "protected_text_digest": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "placement_order": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "prominence_checks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "a11y_checks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "visible_duration_ms": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3600000
+        },
+        "scroll_visibility_attested": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "attestation_type",
+        "rendered_at",
+        "locale",
+        "channel",
+        "renderer_version",
+        "viewport",
+        "required_sections_shown",
+        "protected_text_digest",
+        "placement_order",
+        "prominence_checks",
+        "a11y_checks",
+        "visible_duration_ms",
+        "scroll_visibility_attested"
+      ],
+      "additionalProperties": false
+    },
+    "acknowledgment": {
+      "type": "object",
+      "properties": {
+        "actor": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "enum": [
+            "CONSUMER"
+          ]
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "enum": [
+            "ACKNOWLEDGE"
+          ]
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "captured_at": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40,
+          "format": "date-time",
+          "description": "Actual UTC time captured with the consumer's affirmative acknowledgment, after the accepted presentation and no later than server validation. Do not substitute a server-clock value for a consumer event."
+        },
+        "affirmative_action": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "actor",
+        "action",
+        "event_id",
+        "captured_at",
+        "affirmative_action"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "merchant_id",
+    "agent_id",
+    "request_id",
+    "correlation_id",
+    "journey_id",
+    "expected_version",
+    "idempotency_key",
+    "renderer_id",
+    "cart_digest",
+    "disclosure_digest",
+    "outcome",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

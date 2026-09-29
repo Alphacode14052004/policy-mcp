@@ -1,0 +1,48 @@
+{
+  "cart": {
+    "cart_id": "MOCK-CART-APPLIANCE-800-COMPARE",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_id": "line-appliance",
+        "sku": "MOCK-SKU-APPLIANCE",
+        "category": "APPLIANCE",
+        "item_type": "GOODS",
+        "quantity": 1,
+        "unit_price_cents": 80000
+      }
+    ],
+    "tax_cents": 0,
+    "shipping_cents": 0,
+    "total_cents": 80000
+  },
+  "merchant_id": "MOCK-MER-0001",
+  "agent_id": "MOCK-AGT-001",
+  "program_id": "MOCK-PRG-HOM",
+  "channel": "ONLINE_AGENT",
+  "renderer_id": "MOCK-RENDERER-CHAT",
+  "locale": "en-US",
+  "account_terms_id": "MOCK-TERMS-001",
+  "jurisdiction": {
+    "profile_id": "MOCK_PROFILE_DEFAULT",
+    "issuer_charter": "MOCK_FEDERAL_SAVINGS_BANK",
+    "issuer_location": "MOCK-ISSUER-A",
+    "product_legal_type": "OPEN_END_REVOLVING",
+    "account_program": "MOCK-PRG-HOM",
+    "origination_channel": "ONLINE_AGENT",
+    "merchant_location": "MOCK-LOCATION-A",
+    "consumer_residence_state": "MOCK-ZZ",
+    "billing_state": "MOCK-ZZ",
+    "servicemember_status_source": "MOCK-STATUS-REGISTRY",
+    "servicemember_status_result": "MOCK_NOT_REFERRED",
+    "transaction_at": "2026-09-29T12:00:00Z"
+  },
+  "preferences": {
+    "avoid_surprise_interest": true,
+    "target_monthly_cents": 7000,
+    "payoff_horizon_months": 12
+  },
+  "idempotency_key": "appliance-800-start-13508d1ab8c4",
+  "request_id": "appliance-800-request-13508d1ab8c4",
+  "correlation_id": "appliance-800-correlation-13508d1ab8c4"
+}

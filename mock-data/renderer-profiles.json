@@ -1,0 +1,56 @@
+{
+  "data_classification": "SYNTHETIC_HACKATHON_DATA",
+  "not_for_production": true,
+  "schema_version": "1",
+  "records": [
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.0.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": null,
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "MOCK-RENDERER-CHAT",
+      "renderer_version": "1.0.0",
+      "presentation_policy_id": "MOCK-PRESENTATION-001",
+      "presentation_policy_version": "1.0.0",
+      "locales": [
+        "en-US"
+      ],
+      "channels": [
+        "ONLINE_AGENT"
+      ],
+      "capabilities": [
+        "EXACT_TEXT",
+        "AFFIRMATIVE_CONSENT"
+      ],
+      "required_sections": [
+        "headline",
+        "warning",
+        "facts",
+        "allocation",
+        "terms"
+      ],
+      "prominence_checks": [
+        "READABLE",
+        "EQUAL_PROMINENCE",
+        "WARNING_VISIBLE"
+      ],
+      "a11y_checks": [
+        "KEYBOARD",
+        "SCREEN_READER",
+        "NO_COLOR_ONLY"
+      ],
+      "minimum_visible_ms": 1000,
+      "checksum": "f3b77c655ca8ea90b36edcb42511fdc0a80acee1d29f22ee650dd8de24660e95"
+    }
+  ]
+}

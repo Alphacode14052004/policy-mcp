@@ -1,0 +1,69 @@
+{
+  "data_classification": "SYNTHETIC_HACKATHON_DATA",
+  "not_for_production": true,
+  "schema_version": "1",
+  "records": [
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.0.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": null,
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "MOCK_PROFILE_DEFAULT",
+      "policy_id": "MOCK_DEFAULT",
+      "matches": {
+        "issuer_charter": "MOCK_FEDERAL_SAVINGS_BANK",
+        "issuer_location": "MOCK-ISSUER-A",
+        "product_legal_type": "OPEN_END_REVOLVING",
+        "account_program": "MOCK-PRG-HOM",
+        "origination_channel": "ONLINE_AGENT",
+        "merchant_location": "MOCK-LOCATION-A",
+        "consumer_residence_state": "MOCK-ZZ",
+        "billing_state": "MOCK-ZZ",
+        "servicemember_status_source": "MOCK-STATUS-REGISTRY",
+        "servicemember_status_result": "MOCK_NOT_REFERRED"
+      },
+      "checksum": "db41bc6ec61a70a0a1b6da6016dfed331b7d3fd332575420802add549fa1b24b"
+    },
+    {
+      "data_classification": "SYNTHETIC_HACKATHON_DATA",
+      "not_for_production": true,
+      "version": "1.0.0",
+      "effective_at": "2026-01-01T00:00:00Z",
+      "expires_at": "2030-01-01T00:00:00Z",
+      "review_at": "2029-12-01T00:00:00Z",
+      "status": "APPROVED_MOCK",
+      "maker": "MOCK-MAKER",
+      "checker": "MOCK-CHECKER",
+      "legal_approval_id": "MOCK-APPROVAL-001",
+      "approved_at": "2026-01-01T00:00:00Z",
+      "predecessor": null,
+      "rollback_reference": null,
+      "source_system": "MOCK-AUTHORITATIVE-REGISTRY",
+      "id": "MOCK_PROFILE_CAP",
+      "policy_id": "MOCK_STATE_CAP",
+      "matches": {
+        "issuer_charter": "MOCK_FEDERAL_SAVINGS_BANK",
+        "issuer_location": "MOCK-ISSUER-A",
+        "product_legal_type": "OPEN_END_REVOLVING",
+        "account_program": "MOCK-PRG-HOM",
+        "origination_channel": "ONLINE_AGENT",
+        "merchant_location": "MOCK-LOCATION-A",
+        "consumer_residence_state": "MOCK-YY",
+        "billing_state": "MOCK-YY",
+        "servicemember_status_source": "MOCK-STATUS-REGISTRY",
+        "servicemember_status_result": "MOCK_NOT_REFERRED"
+      },
+      "checksum": "0779eda1206ad32d71837d947d29b194bc4a9b0d995928ab03808e7923d67779"
+    }
+  ]
+}

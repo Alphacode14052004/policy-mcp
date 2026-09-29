@@ -1,0 +1,256 @@
+{
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "duration_seconds": 18.003559600096196,
+  "tests_run": 61,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "tests": [
+    {
+      "test": "tests.contract.test_mcp.MCPTests.test_02_discovery_has_self_describing_cold_start_contracts",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.contract.test_mcp.MCPTests.test_mcp_happy_path",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.contract.test_mcp.MCPTests.test_mcp_valid_and_malformed_inputs_return_audited_schema_envelopes",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.integration.test_stdio.StdioTests.test_31_stdout_contains_only_jsonrpc",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_all_plan_families_produce_matching_canonical_copy",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_delayed_acknowledgment_has_valid_repreparation_recovery",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_draft_policy_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_new_offer_name_cannot_mislabel_deferred_interest",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_no_ack_policy_still_requires_signed_presentation_receipt",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_rejected_presentation_does_not_issue_receipt",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_renderer_version_change_invalidates_receipt",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_reward_facts_come_from_config",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_sensitive_request_identifier_is_not_written_to_audit",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_snapshot_survives_stale_evidence_invalidation",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_tax_shipping_excluded_but_allocation_reconciles",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_unconfirmed_or_standard_tender_never_silently_assigned",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_hardening.HardeningTests.test_unsigned_policy_fails_startup",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_01_happy_path_receipt_passport",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_03_lazy_agent_cannot_authorize_first",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_04_changed_cart_invalidates_receipt",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_05_terms_version_changed",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_06_offer_expires_mid_journey",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_07_category_registry_cannot_be_overridden",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_08_no_promotion_standard_fallback",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_09_idempotent_ack_and_authorization",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_10_concurrent_same_version_only_one_advances",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_11_prompt_injection_ignored_and_not_persisted",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_12_paraphrase_request_and_wrong_digest_blocked",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_13_context_loss_recovers",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_14_missing_preferences_omits_recommendation",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_15_omitted_presentation_sections_are_logged",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_16_mixed_cart_threshold_on_700_not_800",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_17_excluded_balance_requires_confirmation",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_18_deferred_interest_mislabeled_zero_fails",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_19_true_zero_plan_with_deferred_copy_fails",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_20_policy_change_invalidates",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_21_context_change_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_22_cashback_never_interest_free",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_23_sensitive_fields_rejected_without_logging",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_24_adverse_action_routes_without_notice",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_25_audit_failure_blocks_authorization",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_25b_final_audit_failure_rolls_back_state",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_26_corrupt_json_and_broken_references",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_26b_broken_reference_at_startup",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_27_idempotency_conflict_different_payload",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_28_restart_keeps_state_and_signing_key",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_29_allocation_and_payment_totals",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_30_unsupported_currency_locale_renderer",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_32_forgery_identity_expiry_and_replay",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_32b_receipt_expiry",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_32c_cross_journey_receipt",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_audit_append_only",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_decline_and_expiry_terminal",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_fictional_cap_requires_full_profile",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.scenarios.test_journeys.JourneyTests.test_presentation_cannot_acknowledge_in_one_step",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.unit.test_core.CoreTests.test_boolean_is_not_money_and_extra_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.unit.test_core.CoreTests.test_configured_schedules_reconcile",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.unit.test_core.CoreTests.test_final_payment_rounding_reconciles",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.unit.test_core.CoreTests.test_month_end_leap_deadline",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.unit.test_core.CoreTests.test_prose_and_line_order_do_not_change_cart_digest",
+      "status": "PASS"
+    },
+    {
+      "test": "tests.unit.test_core.CoreTests.test_sensitive_nested_data_and_timezone",
+      "status": "PASS"
+    }
+  ]
+}
